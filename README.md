@@ -41,7 +41,7 @@ foo.should.have.length( 3 );
 Ahora si a escribir el código:
 Creamos una función par la que vamos a definir los test unitarios:
 ```javascript
-exports.pruebaSumar = function(valor){
+exports.pruebaConcatenar = function(valor){
     return value + "prueba";
 }
 ```

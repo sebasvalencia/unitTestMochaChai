@@ -1,3 +1,3 @@
-exports.pruebaSumar = function(valor){
-    return value + "prueba";
+exports.pruebaConcatenar = function(valor){
+    return valor + "prueba";
 }
