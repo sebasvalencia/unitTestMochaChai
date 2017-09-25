@@ -10,9 +10,24 @@ describe("Test con ASSERT interface de CHAI: ", function() {
         //de pruebas en un mismo fichero.
         it("Probar la respuesta con assert.equal(value, 'value')", function(){
             result = funcionAProbar.pruebaConcatenar("texto de ");
-            assert(result, "texto de prueba");
+            assert.equal(result, "texto de prueba");
         });
     });
+});
+
+describe("Test con ASSERT de función sumar", function(){   
+        it("Probar función sumar dos numeros enteros", function(){
+            result = funcionAProbar.sumar(1,2);
+            assert.equal(result, 3);
+        });
+        it("Probar función sumar dos numeros negativos", function(){
+            result = funcionAProbar.sumar(-1,-2);
+            assert.equal(result,-3);
+        });
+        it("Probar función sumar dos numeros decimales", function(){
+            result = funcionAProbar.sumar(1.5,1.5);
+            assert.equal(result, 3);
+        });        
 });
 
 
