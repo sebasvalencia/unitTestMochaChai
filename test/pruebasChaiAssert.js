@@ -57,4 +57,8 @@ describe("Test con ASSERT de funcion retornar arreglo", function(){
         result = funcionAProbar.retornarArreglo();
         assert.typeOf(result, 'array');
     });
+    it("Probar que incluya el numero 2", function(){
+        result = funcionAProbar.retornarArreglo();
+        assert.include(result, 2);
+    });
 });
