@@ -35,7 +35,12 @@ describe("Test con ASSERT de función sumar", function(){
         it("Probar función sumar dos numeros decimales", function(){
             result = funcionAProbar.sumar(1.5,1.5);
             assert.equal(result, 3);
-        });        
+        });
+        it("Probar que la respuesta es numerica", function(){
+            result = funcionAProbar.sumar(2,7);
+            assert.isNumber(result);
+        });
+
 });
 
 
