@@ -16,7 +16,10 @@ describe("Test con ASSERT interface de CHAI: ", function() {
             result = funcionAProbar.holaMundo("Hola");
             assert.typeOf(result, 'string');
         });
-
+        it("Probar que ka respuesta sea un string", function(){
+            result = funcionAProbar.holaMundo("Hola");
+            assert.isString(result);
+        });
     });
 });
 
