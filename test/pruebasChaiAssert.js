@@ -36,3 +36,17 @@ describe("Test con ASSERT de función sumar", function(){
 });
 
 
+describe("Test con ASSERT de funcion retornar arreglo", function(){
+    it("Probar que sea un arreglo", function(){
+        result = funcionAProbar.retornarArreglo();
+        assert.isArray(result);
+    });
+    it("Probar que no sea un objecto", function(){
+        result = funcionAProbar.retornarArreglo();
+        assert.isNotObject(result);
+    });
+    it("Probar que sea de tipo arreglo", function(){
+        result = funcionAProbar.retornarArreglo();
+        assert.typeOf(result, 'array');
+    });
+});
