@@ -68,4 +68,8 @@ describe("Test con ASSERT de funcion retornar objecto", function(){
         result = funcionAProbar.retornaObjecto();
         assert.property(result, 'nombre');
     });
+    it("Probar que tenga un tipo anidado", function(){
+        result = funcionAProbar.retornaObjecto();
+        assert.nestedProperty(result, 'direccion.pais');
+    });
 });

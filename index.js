@@ -12,6 +12,9 @@ exports.retornarArreglo = function(){
 
 exports.retornaObjecto = function(){
     return {
-        nombre: "Sebas"
+        nombre: "Sebas",
+        direccion:{
+            pais: 'Colombia'
+        }
     }
 }
