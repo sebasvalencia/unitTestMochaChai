@@ -62,3 +62,10 @@ describe("Test con ASSERT de funcion retornar arreglo", function(){
         assert.include(result, 2);
     });
 });
+
+describe("Test con ASSERT de funcion retornar objecto", function(){
+    it("Probar que el objecto tenga un tipo nombre", function(){
+        result = funcionAProbar.retornaObjecto();
+        assert.property(result, 'nombre');
+    });
+});
