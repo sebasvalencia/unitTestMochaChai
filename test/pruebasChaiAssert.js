@@ -40,6 +40,10 @@ describe("Test con ASSERT de función sumar", function(){
             result = funcionAProbar.sumar(2,7);
             assert.isNumber(result);
         });
+        it("Probar sumar dos numeros", function(){
+            result = funcionAProbar.sumar(1,2);
+            assert.equal(result, 3);
+        })
 
 });
 
