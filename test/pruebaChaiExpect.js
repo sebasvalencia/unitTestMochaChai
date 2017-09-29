@@ -7,5 +7,10 @@ describe("Test con EXPECT de función sumar: ", function(){
         result = funcionAProbar.sumar(1,3);
         expect(4).to.equal(4);
     });
+
+    it("Probar función sumar dos números negativos", function(){
+        result = funcionAProbar.sumar(-1,-4);
+        expect(-5).to.equal(-5);
+    });
     
 });
